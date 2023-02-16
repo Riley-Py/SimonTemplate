@@ -45,9 +45,10 @@
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.Aquamarine;
-            this.exitButton.Location = new System.Drawing.Point(93, 115);
+            this.exitButton.Location = new System.Drawing.Point(124, 142);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(101, 81);
+            this.exitButton.Size = new System.Drawing.Size(135, 100);
             this.exitButton.TabIndex = 19;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -65,9 +66,10 @@
             this.newButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newButton.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newButton.ForeColor = System.Drawing.Color.Aquamarine;
-            this.newButton.Location = new System.Drawing.Point(93, 13);
+            this.newButton.Location = new System.Drawing.Point(124, 16);
+            this.newButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.newButton.Name = "newButton";
-            this.newButton.Size = new System.Drawing.Size(101, 78);
+            this.newButton.Size = new System.Drawing.Size(135, 96);
             this.newButton.TabIndex = 18;
             this.newButton.Text = "New Game";
             this.newButton.UseVisualStyleBackColor = false;
@@ -75,16 +77,17 @@
             // 
             // MenuScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.newButton);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MenuScreen";
-            this.Size = new System.Drawing.Size(300, 300);
+            this.Size = new System.Drawing.Size(400, 369);
+            this.Load += new System.EventHandler(this.MenuScreen_Load_1);
             this.ResumeLayout(false);
 
         }

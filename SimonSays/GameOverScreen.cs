@@ -14,18 +14,22 @@ namespace SimonSays
         public GameOverScreen()
         {
             InitializeComponent();
+            MenuScreen.backMedia.Open(new Uri(Application.StartupPath + "/Resources/ending.mp3"));
         }
 
         private void GameOverScreen_Load(object sender, EventArgs e)
         {
-            //TODO: show the length of the pattern
+            
             lengthLabel.Text = $"{Form1.pattern.Count}";
+            MenuScreen.backMedia.Play();
         }
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            //TODO: close this screen and open the MenuScreen
+            
+            MenuScreen.backMedia.Stop();
             Form1.ChangeScreen(this, new MenuScreen());
+           
         }
     }
 }

@@ -44,6 +44,7 @@ namespace SimonSays
                 {
                    
                     greenButton.BackColor = Color.LimeGreen;
+                    greenSound.Play();
                     Refreshing(600);
                     greenButton.BackColor = Color.ForestGreen;
                     Refreshing(600);
@@ -52,6 +53,7 @@ namespace SimonSays
                 else if (Form1.pattern[i] == 1) //Yellow button is 1
                 {
                     yellowButton.BackColor = Color.Yellow;
+                    yellowSound.Play();
                     Refreshing(600);
                     yellowButton.BackColor = Color.Goldenrod;
                     Refreshing(600);
@@ -59,6 +61,7 @@ namespace SimonSays
                 else if (Form1.pattern[i] == 2) //Red button is 2
                 {
                     redButton.BackColor = Color.Red;
+                    redSound.Play();
                     Refreshing(600);
                     redButton.BackColor = Color.DarkRed;
                     Refreshing(600);
@@ -66,6 +69,7 @@ namespace SimonSays
                 else if (Form1.pattern[i] == 3) //Blue button is 3
                 {
                     blueButton.BackColor = Color.Blue;
+                    blueSound.Play();
                     Refreshing(600);
                     blueButton.BackColor = Color.DarkBlue;
                     Refreshing(600);
