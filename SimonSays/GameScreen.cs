@@ -26,7 +26,7 @@ namespace SimonSays
 
         private void GameScreen_Load(object sender, EventArgs e)
         {
-
+           
             Form1.pattern.Clear();
             Refreshing(1000);
             ComputerTurn();

@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Media;
 using System.Drawing.Drawing2D;
+using System.IO;
 
 namespace SimonSays
 {
@@ -17,15 +18,22 @@ namespace SimonSays
        
 
         public static List<int> pattern = new List<int>(); //List for the pattern
+        
+
 
         public Form1()
         {
             InitializeComponent();
+            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             ChangeScreen(this, new MenuScreen());
+            
+           
         }
         /// <summary>
         /// Changes the screen

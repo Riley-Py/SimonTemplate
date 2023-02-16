@@ -35,17 +35,19 @@
             // 
             // exitButton
             // 
-            this.exitButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.exitButton.BackColor = System.Drawing.Color.SkyBlue;
+            this.exitButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exitButton.BackgroundImage")));
+            this.exitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.exitButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.exitButton.FlatAppearance.BorderSize = 0;
             this.exitButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.exitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.ForeColor = System.Drawing.Color.White;
-            this.exitButton.Location = new System.Drawing.Point(16, 51);
+            this.exitButton.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.ForeColor = System.Drawing.Color.Aquamarine;
+            this.exitButton.Location = new System.Drawing.Point(93, 115);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(84, 32);
+            this.exitButton.Size = new System.Drawing.Size(101, 81);
             this.exitButton.TabIndex = 19;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -53,23 +55,25 @@
             // 
             // newButton
             // 
-            this.newButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.newButton.BackColor = System.Drawing.Color.SkyBlue;
+            this.newButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("newButton.BackgroundImage")));
+            this.newButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.newButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.newButton.FlatAppearance.BorderSize = 0;
             this.newButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
             this.newButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.newButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newButton.ForeColor = System.Drawing.Color.White;
-            this.newButton.Location = new System.Drawing.Point(16, 13);
+            this.newButton.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newButton.ForeColor = System.Drawing.Color.Aquamarine;
+            this.newButton.Location = new System.Drawing.Point(93, 13);
             this.newButton.Name = "newButton";
-            this.newButton.Size = new System.Drawing.Size(84, 32);
+            this.newButton.Size = new System.Drawing.Size(101, 78);
             this.newButton.TabIndex = 18;
             this.newButton.Text = "New Game";
             this.newButton.UseVisualStyleBackColor = false;
             this.newButton.Click += new System.EventHandler(this.newButton_Click);
             // 
-            // MainScreen
+            // MenuScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,8 +83,8 @@
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.newButton);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "MainScreen";
-            this.Size = new System.Drawing.Size(301, 300);
+            this.Name = "MenuScreen";
+            this.Size = new System.Drawing.Size(300, 300);
             this.ResumeLayout(false);
 
         }
