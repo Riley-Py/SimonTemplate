@@ -72,6 +72,16 @@ namespace SimonSays.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] buttonclick {
+            get {
+                object obj = ResourceManager.GetObject("buttonclick", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] ending {
             get {
                 object obj = ResourceManager.GetObject("ending", resourceCulture);

@@ -11,6 +11,14 @@ using System.Media;
 using System.Drawing.Drawing2D;
 using System.IO;
 
+/***************************************************************************************************************
+ * Author: Riley Cant
+ * Course: ICS4U
+ * Program: Simon
+ * Description: A summative project that is based off the classic memory game, "Simon"
+ * Date of writing: 19/02/23
+ ***************************************************************************************************************/
+
 namespace SimonSays
 {
     public partial class Form1 : Form
