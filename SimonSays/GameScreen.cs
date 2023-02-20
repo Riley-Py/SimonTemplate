@@ -15,10 +15,11 @@ namespace SimonSays
         int guess = 0; //Get guesses
 
         //All the sounds required
-        SoundPlayer greenSound = new SoundPlayer(Properties.Resources.green);
-        SoundPlayer blueSound = new SoundPlayer(Properties.Resources.blue);
-        SoundPlayer redSound = new SoundPlayer(Properties.Resources.red);
-        SoundPlayer yellowSound = new SoundPlayer(Properties.Resources.yellow);
+        //*Note: customized the sound.  If it doesn't work, uncomment below
+        //SoundPlayer greenSound = new SoundPlayer(Properties.Resources.green);
+        //SoundPlayer blueSound = new SoundPlayer(Properties.Resources.blue);
+        //SoundPlayer redSound = new SoundPlayer(Properties.Resources.red);
+        //SoundPlayer yellowSound = new SoundPlayer(Properties.Resources.yellow);
         SoundPlayer gameOverSound = new SoundPlayer(Properties.Resources.mistake);
 
 
@@ -31,8 +32,11 @@ namespace SimonSays
 
         private void GameScreen_Load(object sender, EventArgs e)
         {
+            //Added the regions
+
             GraphicsPath circlePath = new GraphicsPath();
             GraphicsPath circlePath2 = new GraphicsPath();
+
             Matrix transformMatrix = new Matrix();
 
             circlePath2.AddEllipse(0, 0, 100, 100);
@@ -40,15 +44,11 @@ namespace SimonSays
             scoreLabel.Region = new Region(circlePath2);
             circlePath.AddEllipse(5, 5, 220, 220);
 
-
-
             Region buttonRegion = new Region(circlePath);
 
             greenButton.Region = buttonRegion;
-
-            
+  
             transformMatrix.RotateAt(90, new PointF(50, 50));
-
             buttonRegion.Transform(transformMatrix);
 
             redButton.Region = buttonRegion;
@@ -62,12 +62,6 @@ namespace SimonSays
             buttonRegion.Transform(transformMatrix);
 
             yellowButton.Region = buttonRegion;
-
-          
-
-            
-
-
 
             Form1.pattern.Clear();
             Refreshing(1000);
